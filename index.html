@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/intlTelInput.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--header-text-->
+        <div class="header_text">
+            <h1 class="text-center mb-3"> Create a New Account</h1>
+            <span class="down_header"><p class="text-center">Come on join our community!  Let's set up your account.  Already have one?<a href="" class="text-info"> Sign in here</a></p></span>
+        </div>
+        <!--social-activation-md-lg-->
+        <div class="row">
+            <div class="col-md-3 col-lg-3 d-none d-md-block offset-2 border-end">
+                <p class="mb-3">You can also sign in with these:</p>
+                <div style="align-content:space-between;">
+                    <button type="button" class="btn social_btn bg-fb py-3">Facebook</button><br/>
+                    <button type="button" class="btn social_btn bg-tw py-3">Twitter</button><br/>
+                    <button type="button" class="btn social_btn bg-go py-3">Google</button><br/>
+                </div>
+            </div>
+
+            <!--social-activation-sm-xs-->
+            <div class="col-sm-12 d-block d-md-none mb-4">
+                <p class="mb-3">You can also sign in with these:</p>
+                <div style="display:flex; justify-content: space-evenly;">
+                    <button type="button" class="btn social_btn_sm bg-fb m-1 ">Facebook</button>
+                    <button type="button" class="btn social_btn_sm bg-tw m-1 ">Twitter</button>
+                    <button type="button" class="btn social_btn_sm bg-go m-1 ">Google</button>
+                </div>
+            </div>
+
+            <!--form-area-->
+            <div class="col-md-6 col-lg-6 form_area">
+                <form action="" class="needs-validation" novalidate autocomplete="off">
+
+
+                    <!--Name-area-->
+                    <label class="form_titles mb-1 " for="fname">First-Last Name:</label>
+                    <input type="text" id="fname" class="form-control mb-1" placeholder="John Doe" required>
+                    <div class="invalid-feedback"> Please enter your First-Last Name</div>
+
+                    <!--Phone-area-->
+                    <div class="phone_div">
+                        <label class="form_titles mb-1" for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" class="form-control mb-1" placeholder="" required>
+                        <span id="valid-msg" class="hide"></span>
+                        <span id="error-msg" class="hide"></span>
+                    </div>
+
+                    <!--Country-area-->
+                    <label class="form_titles mb-1" for="country">Country:</label>
+                    <input type="text" id="country" class="form-control mb-1" placeholder="Your Country" required>
+                    <div class="invalid-feedback">Please enter your Country</div>
+
+
+                    <!--Service-area-->
+                    <div class="dropdown mt-2">
+                        <button class="btn dropdown-toggle mb-3 btn_service" id="click_services" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Our Services
+                        </button>
+                        <ul class="dropdown-menu" style="width:100%" id="services">
+                            <li><a class="dropdown-item" href="#">Service 1</a></li>
+                            <li><a class="dropdown-item" href="#">Service 2</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <!--Message-area-->
+                    <label class="form_titles mb-1" for="floatingTextarea2">Your Message:</label>
+                    <div class="form-floating mb-1">
+                        <textarea class="form-control" placeholder="You can write your message here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    </div>
+
+
+
+                    <!--terms-->
+
+
+                    <p style="font-weight:400; font-size:14px;" class="mb-3">By submitting the form you agree to our <a href="" class="text-info">Terms of Service</a></p>
+
+                    <!--submit-->
+                    <input type="submit" value="Join" id="submit_ID" onClick="btnClick()" class="btn btn_submit">
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/js/intlTelInput.min.js"></script>
+    <script src="/js/intlTelInput-jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

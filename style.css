@@ -1,0 +1,118 @@
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+         :root {
+            --thin-text: 400;
+            --text-light: #f8f6f6;
+            --fb-color: #068cfc;
+            --tw-color: #9bccfc;
+            --go-color: #ed6463;
+            --join-color: #009900;
+            --header-color: #252525;
+            --gray-dark-color: #6c6c6c;
+            --placeholder-color: #999999;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration-line: none !important;
+        }
+        
+        body {
+            margin: 50px !important;
+        }
+        /* Header-Area */
+        
+        .header_text {
+            margin: 50px 0px 50px !important;
+        }
+        
+        p {
+            font-weight: var(--thin-text);
+            margin: 0 !important;
+        }
+        /* social-media-button*/
+        
+        .social_btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: space-between;
+            color: var(--text-light);
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .social_btn_sm {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: space-between;
+            color: var(--text-light);
+            font-size: 12px;
+            font-weight: 400;
+        }
+        
+        .bg-fb {
+            background-color: var(--fb-color);
+        }
+        
+        .bg-fb:hover {
+            border: 1px solid var(--fb-color) !important;
+            color: var(--fb-color) !important;
+        }
+        
+        .bg-tw {
+            background-color: var(--tw-color);
+        }
+        
+        .bg-tw:hover {
+            border: 1px solid var(--tw-color) !important;
+            color: var(--tw-color) !important;
+        }
+        
+        .bg-go {
+            background-color: var(--go-color);
+        }
+        
+        .bg-go:hover {
+            border: 1px solid var(--go-color) !important;
+            color: var(--go-color) !important;
+        }
+        /* form-area */
+        
+        .form_titles {
+            color: var(--gray-dark-color);
+            font-size: 1rem;
+        }
+        
+        .iti {
+            display: block !important;
+        }
+        
+        #valid-msg {
+            color: #34A853;
+        }
+        
+        #error-msg {
+            color: #EA4335;
+        }
+        
+        .btn_service {
+            width: 100%;
+            border: 1px solid #ced4da !important;
+            color: var(--gray-dark-color);
+        }
+        
+        .btn_submit {
+            background-color: var(--join-color);
+            color: var(--text-light);
+            width: 8rem;
+        }
+        
+        .btn_submit:hover {
+            background-color: var(--text-light) !important;
+            color: var(--join-color) !important;
+            border: 1px solid var(--join-color) !important;
+            width: 8rem;
+        }
+        /* message-area */
